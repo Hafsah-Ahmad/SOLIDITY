@@ -34,5 +34,40 @@
                             -Conditional operators
                             -Type conversion operators
 
-                                 KAL UPDATE KRUNGI NOTESSSSSSSSS
+                                 FUNCTIONS
+               
+          -executable units of code
+          -usually defined inside a contract but can be also defined outside the contract
+          -reuseable codes, saving memory.
+                               
+                               DECLARATION
+               -keyword "function"
+               -unique name
+               -data type and variable name
+               -return statement
+               -visibility
+
+                               STATE MUTABILITY
+               
+               desribes whether the function reads, modifies or doesn't affect the contract's state.
+
+                              TYPES OF FUNCTIONS
+
+                    -view function
+                    -pure functions
+                    -pullback functions
+
+                             STORAGE AND MEMORY
+           Storage=
+                  -Permanent data stored on the blockchain.
+                  -Used for state variables.
+                  -Expensive (gas-wise).
+                   Example: uint public x;
+
+          Memory=
+                 -Temporary data used during function execution.
+                 -Cleared after the function ends.
+                 -Cheaper than storage.
+                 -Used in function parameters or local variables.
+                 Example: function show(uint[] memory arr) public view { }
             
