@@ -1,0 +1,40 @@
+                                                                 Solidity Quick Notes
+                                                                 
+Solidity is an object-oriented, high-level programming language used to implement smart contracts on Ethereum and similar blockchain platforms.
+
+ Key Features=
+-Curly-brace syntax (inspired by C++, Python, JavaScript)
+-Supports complex user-defined types, libraries, and inheritance
+
+ Solidity Variables=
+Variables are essential for storing and managing data within smart contracts. Solidity provides three types of variables:
+
+Local Variables=
+Declared inside functions
+Temporary storage, accessible only within function scope
+
+State Variables=
+Stored permanently on the blockchain
+Represent the long-term state of a contract
+
+Global Variables=
+Special variables available throughout the contract
+Examples: msg.sender, tx.origin, block.timestamp, etc.
+
+Variable Declaration Rules=
+-Avoid using reserved keywords (e.g., bool, int) as names
+-Do not start variable names with numbers
+-Solidity is case-sensitive
+-Use camelCase for naming conventions
+
+SOLIDITY OPERATORS=
+Solidity supports a wide range of operators to perform various operations:
+-Arithmetic Operators (+, -, *, /, %)
+-Comparison Operators (==, !=, <, >, <=, >=)
+-Logical Operators (&&, ||, !)
+-Bitwise Operators (&, |, ^, ~, <<, >>)
+-Assignment Operators (=, +=, -=, etc.)
+-Conditional (Ternary) Operator (condition ? trueExpr : falseExpr)
+-Type Conversion Operators (uint(x), address(x))
+
+More updates coming soon
