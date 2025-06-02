@@ -37,4 +37,42 @@ Solidity supports a wide range of operators to perform various operations:
 -Conditional (Ternary) Operator (condition ? trueExpr : falseExpr)
 -Type Conversion Operators (uint(x), address(x))
 
-More updates coming soon
+FUNCTIONS IN SOLIDITY=
+-Executable units of code
+-Usually defined inside a contract but can also be defined outside
+-Reusable code, saving memory and gas
+
+DECLARATION OF FUNCTION=
+-Keyword: function
+-Unique function name
+-Data type and variable name as parameters
+-Return statement (if any)
+-Visibility specifier (public, private, etc.)
+
+STATE MUTABILITY= 
+-Describes whether the function reads, modifies, or doesn’t affect the contract’s state.
+-view – reads state
+-pure – neither reads nor modifies
+-payable – can receive Ether
+
+TYPES OF FUNCTION=
+-View Functions – read state variables, no changes
+-Pure Functions – do not read or write any state
+-Fallback Functions – handle unknown function calls or direct Ether transfers
+
+STORAGE VS MEMORY=
+Storage=
+-Permanent data stored on the blockchain
+-Used for state variables
+-Expensive in gas
+-Example: uint public x;
+
+Memory=
+-Temporary data used during function execution
+-Cleared after the function ends
+-Cheaper than storage
+-Used for function inputs or temporary variables
+-Example:
+function show(uint[] memory arr) public view { }
+
+
