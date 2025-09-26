@@ -72,4 +72,20 @@
                  Example: function show(uint[] memory arr) public view { }
             
 
-            
+             EVENTS=
+             -Events are used for logging and can be listened to by external applications. When an event is emitted, it writes data to the transaction log.
+             -Structure:
+              event EventName(type indexed param1, type param2);
+             -Use indexed to make parameters searchable in logs (up to 3 indexed allowed).
+             -Call with emit.
+              Syntax:
+              event EventName(type indexed param1, type param2, ...);
+
+
+              MODIFIERS=
+                       -Modifiers are used to change the behavior of functions — mostly for access control, validation, or reusable conditions.
+                       -Structure:
+                        modifier ModifierName {
+                        require(condition, "Error message");
+                        _;
+                        }
